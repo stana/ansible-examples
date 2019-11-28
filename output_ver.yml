@@ -1,7 +1,7 @@
 ---
 - hosts: localhost 
   tasks:
-    - name: Ansible Version
+    - name: Get Ansible Version
       #shell: echo "Hi! Tower is working."
       shell: "ansible --version" 
       register: output
