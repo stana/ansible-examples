@@ -1,6 +1,4 @@
 ---
-- name: Output Ansible/Py version
-
 - hosts: localhost 
   tasks:
     - name: Ansible Version
