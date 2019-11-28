@@ -1,0 +1,12 @@
+---
+- name: Output Ansible/Py version
+- hosts: all 
+  tasks:
+    - name: Ansible Version
+      #shell: echo "Hi! Tower is working."
+      shell: "ansible --version" 
+      register: output
+
+    - debug: var=output.stdout_lines
+
+    - debug: var=ansible_python_interpreter
