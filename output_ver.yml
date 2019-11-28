@@ -1,6 +1,7 @@
 ---
 - name: Output Ansible/Py version
-- hosts: all 
+
+- hosts: localhost 
   tasks:
     - name: Ansible Version
       #shell: echo "Hi! Tower is working."
